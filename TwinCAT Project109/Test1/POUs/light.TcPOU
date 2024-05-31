@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="light" Id="{7e51ae7d-a41c-4121-9761-96be3489b038}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM light
+VAR
+	light : BOOL;
+	Lamp :BOOL;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[light := Lamp;]]></ST>
+    </Implementation>
+    <LineIds Name="light">
+      <LineId Id="5" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

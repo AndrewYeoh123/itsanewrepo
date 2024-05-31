@@ -5,10 +5,16 @@
 VAR
 	input1: BOOL;
 	output1:BOOL;
+	counter : int;
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[]]></ST>
+      <ST><![CDATA[counter := counter +1;
+light();]]></ST>
     </Implementation>
+    <LineIds Name="MAIN">
+      <LineId Id="2" Count="0" />
+      <LineId Id="9" Count="0" />
+    </LineIds>
   </POU>
 </TcPlcObject>
